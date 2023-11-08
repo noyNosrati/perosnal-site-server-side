@@ -15,11 +15,11 @@ router.get("/", async (req, res) => {
     }
 })
 
-router.post("/", async (req, res) => {
-    let post = new PostModel(req.body)
-    await post.save()
-    res.json(post)
-    console.log("POSTED")
-})
+// router.post("/", async (req, res) => {
+//     let post = new PostModel(req.body)
+//     await post.save()
+//     res.json(post)
+//     console.log("POSTED")
+// })
 
 module.exports = router
