@@ -8,7 +8,6 @@ const { routesInit } = require("./routes/config_routes")
 
 require("./database/mongoConnect")
 
-let port = process.env.PORT || 3001
 
 
 app.use(express.json())
@@ -16,5 +15,6 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use(cors()) // giving permission of access to every domain
 routesInit(app)
 const server = http.createServer(app);
+let port = process.env.PORT || 3001
 server.listen(port)
 
