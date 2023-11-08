@@ -3,9 +3,10 @@ const http = require("http")
 const app = express()
 const path = require("path")
 const cors = require("cors")
-require("./database/mongoConnect")
 
 const { routesInit } = require("./routes/config_routes")
+
+require("./database/mongoConnect")
 
 let port = process.env.PORT || 3001
 

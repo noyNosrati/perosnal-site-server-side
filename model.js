@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const schema = new mongoose.Schema(
+let schema = new mongoose.Schema(
     {
         quote: String,
         font: String,
